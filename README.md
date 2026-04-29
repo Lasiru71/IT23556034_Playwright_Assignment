@@ -1,21 +1,37 @@
 # IT23556034 Playwright Assignment
 
-This project contains Playwright automation tests for the PixelsSuite Sinhala transliteration tool.
+## Description
 
-## Tool Tested
-https://www.pixelssuite.com/chat-translator
+This project includes automated tests created using Playwright for the Pixelssuite Sinhala transliteration website.
 
-## Technologies Used
-- Node.js
-- Playwright
-- JavaScript
+## Tested Website
 
-## How to Run
-npm install
-npx playwright install
-npx playwright test --headed --project=chromium --timeout=120000
+https://pixelssuite.com/chat-translator
 
-## Test Summary
-- Total automated tests: 20
-- Passed: 20
-- Failed: 0
+## Tools Used
+
+* Playwright
+* JavaScript
+
+## Running the Tests
+
+Use the following command to run all tests:
+
+npx playwright test
+
+## Test Results
+
+* 20 test cases executed
+* All tests passed successfully
+
+## Files
+
+* e2e folder contains all test cases
+* playwright.config.js is the configuration file
+* package.json includes dependencies
+
+## Screenshots
+
+Screenshots are provided separately with the submission.
+
+
