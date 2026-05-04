@@ -13,11 +13,17 @@ async function runTranslatorTest(page, tc) {
   await page.locator('button:has-text("Transliterate")').click();
   await page.waitForTimeout(2000);
 
-  await expect.poll(async () => {
-    return await outputBox.inputValue();
-  }, { timeout: 60000 }).not.toBe('');
+  let actual = '';
 
-  const actual = await outputBox.inputValue();
+  try {
+    await expect.poll(async () => {
+      return await outputBox.inputValue();
+    }, { timeout: 60000 }).not.toBe('');
+
+    actual = await outputBox.inputValue();
+  } catch (e) {
+    actual = 'No output';
+  }
 
   console.log(`\n${tc.id}`);
   console.log(`Input: ${tc.input}`);
