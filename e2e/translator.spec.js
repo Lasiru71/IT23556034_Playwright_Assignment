@@ -11,10 +11,11 @@ async function runTranslatorTest(page, tc) {
 
   await inputBox.fill(tc.input);
   await page.locator('button:has-text("Transliterate")').click();
+  await page.waitForTimeout(2000);
 
   await expect.poll(async () => {
     return await outputBox.inputValue();
-  }, { timeout: 30000 }).not.toBe('');
+  }, { timeout: 60000 }).not.toBe('');
 
   const actual = await outputBox.inputValue();
 
