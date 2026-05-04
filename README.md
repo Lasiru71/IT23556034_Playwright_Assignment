@@ -1,37 +1,32 @@
 # IT23556034 Playwright Assignment
 
-## Description
+# Description  
+This project contains Playwright tests to check the accuracy of the Pixelssuite Sinhala transliteration system.
 
-This project includes automated tests created using Playwright for the Pixelssuite Sinhala transliteration website.
-
-## Tested Website
-
+# Website  
 https://pixelssuite.com/chat-translator
 
-## Tools Used
+# Tools  
+Playwright  
+JavaScript  
 
-* Playwright
-* JavaScript
+# Run Tests  
+npx playwright test  
 
-## Running the Tests
+# View Report  
+npx playwright show-report  
 
-Use the following command to run all tests:
+# Test Results  
+50 test cases executed  
+Negative test cases (fail scenarios)  
+Some tests failed as expected  
 
-npx playwright test
+# Files  
+e2e folder – test cases  
+playwright.config.js – config file  
+package.json – dependencies  
+IT23556034.xlsx – test cases  
 
-## Test Results
-
-* 20 test cases executed
-* All tests passed successfully
-
-## Files
-
-* e2e folder contains all test cases
-* playwright.config.js is the configuration file
-* package.json includes dependencies
-
-## Screenshots
-
-Screenshots are provided separately with the submission.
-
+# Screenshots  
+Screenshots are included separately  
 
